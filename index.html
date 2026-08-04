@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code con Coincidencias Avanzadas -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -29,7 +29,14 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1063054309385399');
+    
+    // Inicialización con Coincidencias Avanzadas Automáticas y Parámetros
+    fbq('init', '1063054309385399', {
+        em: '', // Correo electrónico del usuario (se llenará dinámicamente si está disponible)
+        ph: '', // Número de teléfono del usuario
+        fn: '', // Nombre
+        ln: '', // Apellido
+    });
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -110,27 +117,27 @@
             <div class="flex flex-col gap-4">
                 <!-- Imagen Principal 1 (PRIORIDAD ALTA PARA CARGA RÁPIDA) -->
                 <div class="bg-gray-100 aspect-square rounded-lg flex items-center justify-center border border-gray-200 overflow-hidden relative">
-                    <img src="https://www.sotcarga.com/downloads/kaivie%20productos/portada.png" alt="Portada Curso ChatGPT" class="w-full h-full object-cover z-10" fetchpriority="high">
+                    <img src="https://www.sotcarga.com/downloads/kaivie%20productos/portada.png" alt="" class="w-full h-full object-cover z-10" fetchpriority="high">
                     <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 uppercase rounded z-20">Oferta</div>
                 </div>
                 
                 <!-- Miniaturas de la Galería -->
                 <div class="flex gap-2 overflow-x-auto hide-scrollbar pb-2">
                     <div class="w-1/3 aspect-square flex-shrink-0 bg-gray-200 rounded border-2 border-orange-500 flex items-center justify-center overflow-hidden cursor-pointer">
-                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt.png" alt="Miniatura 1" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
                     </div>
                     <div class="w-1/3 aspect-square flex-shrink-0 bg-gray-100 rounded border border-gray-200 flex items-center justify-center overflow-hidden cursor-pointer opacity-70 hover:opacity-100">
-                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt2.png" alt="Miniatura 2" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt2.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
                     </div>
                     <div class="w-1/3 aspect-square flex-shrink-0 bg-gray-100 rounded border border-gray-200 flex items-center justify-center overflow-hidden cursor-pointer opacity-70 hover:opacity-100">
-                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt5.png" alt="Miniatura 3" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt5.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
                     </div>
                 </div>
 
-                <!-- NUEVO CONTENEDOR PARA LLENAR ESPACIO EN BLANCO (Solo visible en Desktop) -->
+                <!-- CONTENEDOR PARA LLENAR ESPACIO EN BLANCO (Solo visible en Desktop) -->
                 <div class="hidden md:flex flex-col flex-1 -mt-2">
                     <div class="rounded-lg flex items-center justify-center overflow-hidden relative shadow-sm w-full h-full">
-                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt19.png" alt="Detalle del Curso" class="w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
+                        <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt19.png" alt="" class="w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -271,25 +278,24 @@
         </div>
     </main>
 
-    <!-- GALERÍA DE COMPRADORES (Buyer show image estilo Maka) -->
+    <!-- GALERÍA DE COMPRADORES -->
     <section class="bg-gray-50 pt-4 pb-10 px-4 overflow-hidden border-b border-gray-200">
         <h3 class="text-center text-gray-500 font-bold mb-6 text-sm uppercase">Lo que la gente está creando</h3>
         <div class="flex gap-4 overflow-x-auto hide-scrollbar snap-x max-w-7xl mx-auto pb-4">
-            <!-- Cajas simulando imágenes de clientes -->
             <div class="min-w-[150px] md:min-w-[200px] aspect-square bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border snap-center shadow-sm">
-                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt8.png" alt="Foto Cliente 1" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt8.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
             <div class="min-w-[150px] md:min-w-[200px] aspect-square bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border snap-center shadow-sm">
-                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt9.png" alt="Foto Cliente 2" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt9.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
             <div class="min-w-[150px] md:min-w-[200px] aspect-square bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border snap-center shadow-sm">
-                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt.png1.png" alt="Foto Cliente 3" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt.png1.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
             <div class="min-w-[150px] md:min-w-[200px] aspect-square bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border snap-center shadow-sm">
-                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt16.png" alt="Foto Cliente 4" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt16.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
             <div class="min-w-[150px] md:min-w-[200px] aspect-square bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden border snap-center shadow-sm">
-                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt20.png" alt="Foto Cliente 5" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt20.png" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -355,7 +361,7 @@
         </div>
     </section>
 
-    <!-- RESEÑAS DE CLIENTES (Sección de Comentarios) -->
+    <!-- RESEÑAS DE CLIENTES -->
     <section id="reviews" class="py-16 px-4 max-w-2xl mx-auto">
         <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Comentarios de los clientes</h2>
         
@@ -379,7 +385,6 @@
 
         <!-- Lista de Comentarios -->
         <div class="space-y-6">
-            <!-- Reseña 1 -->
             <div class="border-b pb-6">
                 <div class="flex items-center gap-3 mb-2">
                     <div class="bg-gray-300 text-gray-700 font-bold w-10 h-10 rounded-full flex items-center justify-center">ST</div>
@@ -391,7 +396,6 @@
                 <p class="text-gray-700 mt-2">Muy recomendado, excelente el material y el acceso llegó súper rápido a mi correo. Ya empecé a aplicar los prompts.</p>
             </div>
             
-            <!-- Reseña 2 -->
             <div class="border-b pb-6">
                 <div class="flex items-center gap-3 mb-2">
                     <div class="bg-gray-300 text-gray-700 font-bold w-10 h-10 rounded-full flex items-center justify-center">AG</div>
@@ -403,7 +407,6 @@
                 <p class="text-gray-700 mt-2">Buenas tardes, compré el curso pero no encontraba los bonos. Soporte me respondió en 5 minutos y me indicaron dónde descargarlos. ¡Excelente servicio y el contenido es una locura!</p>
             </div>
 
-            <!-- Reseña 3 -->
             <div class="border-b pb-6">
                 <div class="flex items-center gap-3 mb-2">
                     <div class="bg-gray-300 text-gray-700 font-bold w-10 h-10 rounded-full flex items-center justify-center">JV</div>
@@ -415,7 +418,6 @@
                 <p class="text-gray-700 mt-2">Lo mejor que he comprado en temas de IA, está súper bueno y muy directo al grano. Sin tanta teoría aburrida.</p>
             </div>
 
-            <!-- Reseña 4 -->
             <div class="border-b pb-6">
                 <div class="flex items-center gap-3 mb-2">
                     <div class="bg-gray-300 text-gray-700 font-bold w-10 h-10 rounded-full flex items-center justify-center">CF</div>
@@ -465,7 +467,6 @@
     <script>
         function updateTimer() {
             const now = new Date();
-            // Calcula el tiempo restante hasta las 23:59:59 del día actual
             const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
             let diff = endOfDay - now;
             
@@ -482,7 +483,7 @@
         }
         
         setInterval(updateTimer, 1000);
-        updateTimer(); // Llama a la función inmediatamente para no esperar 1 segundo
+        updateTimer();
     </script>
 </body>
 </html>

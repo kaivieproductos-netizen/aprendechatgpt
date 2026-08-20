@@ -32,14 +32,14 @@
     
     // Inicialización con Coincidencias Avanzadas Automáticas y Parámetros
     fbq('init', '1063054309385399', {
-        em: '', // Correo electrónico del usuario (se llenará dinámicamente si está disponible)
+        em: '', // Correo electrónico del usuario
         ph: '', // Número de teléfono del usuario
         fn: '', // Nombre
         ln: '', // Apellido
     });
     fbq('track', 'PageView');
     
-    // Solución al error: Evento InitiateCheckout con valor y divisa añadidos
+    // Evento InitiateCheckout con valor y divisa añadidos
     fbq('track', 'InitiateCheckout', {
         value: 84564.00,
         currency: 'COP'
@@ -51,7 +51,7 @@
     <!-- End Meta Pixel Code -->
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #ffffff;
@@ -97,7 +97,7 @@
                     Hotmart <span class="text-gray-900">Marketplace</span>
                 </div>
 
-                <!-- Iconos de usuario (carrito eliminado) -->
+                <!-- Iconos de usuario -->
                 <div class="flex items-center gap-4 md:gap-6 text-xl">
                     <i class="fas fa-search cursor-pointer hover:text-orange-500 transition hidden md:block"></i>
                     <i class="far fa-user cursor-pointer hover:text-orange-500 transition"></i>
@@ -117,7 +117,7 @@
             
             <!-- COLUMNA IZQUIERDA: GALERÍA DE IMÁGENES -->
             <div class="flex flex-col gap-4">
-                <!-- Imagen Principal 1 (PRIORIDAD ALTA PARA CARGA RÁPIDA) -->
+                <!-- Imagen Principal 1 -->
                 <div class="bg-gray-100 aspect-square rounded-lg flex items-center justify-center border border-gray-200 overflow-hidden relative">
                     <img src="https://www.sotcarga.com/downloads/kaivie%20productos/portada.png" alt="" class="w-full h-full object-cover z-10" fetchpriority="high">
                     <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 uppercase rounded z-20">Oferta</div>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
 
-                <!-- CONTENEDOR PARA LLENAR ESPACIO EN BLANCO (Solo visible en Desktop) -->
+                <!-- CONTENEDOR PARA LLENAR ESPACIO EN BLANCO -->
                 <div class="hidden md:flex flex-col flex-1 -mt-2">
                     <div class="rounded-lg flex items-center justify-center overflow-hidden relative shadow-sm w-full h-full">
                         <img src="https://www.sotcarga.com/downloads/kaivie%20productos/cursogpt19.png" alt="" class="w-full h-full object-cover rounded-lg" loading="lazy" decoding="async">
@@ -156,7 +156,7 @@
                     ¿Te gustaría entender cómo funciona la inteligencia artificial y cómo usar ChatGPT de manera sencilla? No importa si no tienes conocimientos previos, este curso te enseñará paso a paso cómo aprovechar ChatGPT para facilitar tareas, aprender más rápido y mejorar tu productividad.
                 </p>
 
-                <!-- Reseñas (Estrellitas) -->
+                <!-- Reseñas -->
                 <div class="flex items-center gap-2 mb-6 border-t border-b border-gray-100 py-3">
                     <div class="text-yellow-400 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
@@ -180,8 +180,7 @@
 
                 <!-- BOTONES DE COMPRA (CTAs) -->
                 <div class="flex flex-col gap-3 mb-8">
-                    <!-- Botón 3: Estilo Pago al Recibir (Adaptado a digital) -->
-                    <a href="https://go.hotmart.com/Q106304147S" onclick="fbq('track', 'InitiateCheckout', {value: 84564.00, currency: 'COP'});" class="w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md shadow transition duration-300 text-md uppercase">
+                    <a href="https://pay.hotmart.com/H98553195L?sck=HOTMART_PRODUCT_PAGE&off=rqf6mc4y&hotfeature=32" onclick="fbq('track', 'InitiateCheckout', {value: 84564.00, currency: 'COP'});" class="w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-md shadow transition duration-300 text-md uppercase">
                         PAGO 100% SEGURO CON HOTMART
                     </a>
                 </div>
@@ -335,7 +334,7 @@
                 <p class="text-xl md:text-2xl font-semibold mb-8 relative z-10">
                     💡 Así que, ¿qué esperas? ¡Únete a nuestra comunidad, empieza tu camino de transformación y conecta con gente que busca lo mismo que tú!
                 </p>
-                <a href="https://go.hotmart.com/Q106304147S" onclick="fbq('track', 'InitiateCheckout', {value: 84564.00, currency: 'COP'});" class="relative z-10 inline-block bg-white text-orange-600 font-black py-4 px-10 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 text-xl uppercase tracking-wide btn-shake">
+                <a href="https://pay.hotmart.com/H98553195L?sck=HOTMART_PRODUCT_PAGE&off=rqf6mc4y&hotfeature=32" onclick="fbq('track', 'InitiateCheckout', {value: 84564.00, currency: 'COP'});" class="relative z-10 inline-block bg-white text-orange-600 font-black py-4 px-10 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 text-xl uppercase tracking-wide btn-shake">
                     PAGO 100% SEGURO CON HOTMART
                 </a>
             </div>
